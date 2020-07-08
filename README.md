@@ -7,12 +7,17 @@
 ## Scripts
 
 ### Caps Lock to Control + Escape
-File: `CapsToCtrlEsc.ahk`  
+__File:__ `CapsToCtrlEsc.ahk`  
+
+__Description:__  
 Transforms `Caps` key to:  
 - Control `Ctrl` when pressed in combination with another key
 - Escape `Esc` when pressed alone
 
 ### Favorite Folders Quick-Access
-File: `FavFolders.ahk`  
-`Alt` + `LButton` triggers pop-up menu listing favorite folders
+__File:__ `FavFolders.ahk`  
+
+__Description:__ Pop-up menu with list of folders for quick navigation  
+
+__Hotkey:__  `Alt` + `LButton` 
 
