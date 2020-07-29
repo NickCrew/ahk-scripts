@@ -43,6 +43,7 @@ Desktop      ; %A_Desktop%
 Favorites    ; %A_Desktop%\..\Favorites
 My Documents ; %A_MyDocuments%
 Perforce     ; C:\p4
+Source       ; C:\Users\ncf42\Source
 
 Program Files; %A_ProgramFiles%
 */
