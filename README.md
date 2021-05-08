@@ -1,23 +1,21 @@
 # AutoHotKey Scripts
 
-## Documentation
+## AHK Documentation
 
 - [AHK Quick Reference](https://www.autohotkey.com/docs/AutoHotkey.htm)
 
 ## Scripts
 
-### Caps Lock to Control + Escape
-__File:__ `CapsToCtrlEsc.ahk`  
+AHK scripts organized into subfolders based on the key types or intended use.
 
-__Description:__  
-Transforms `Caps` key to:  
-- Control `Ctrl` when pressed in combination with another key
-- Escape `Esc` when pressed alone
+### Profiles
 
-### Favorite Folders Quick-Access
-__File:__ `FavFolders.ahk`  
+Profiles at the top level include scripts from any subfolder(s) in order to create a grouping for specific use-cases, such as a specific device like the HHKB2.
 
-__Description:__ Pop-up menu with list of folders for quick navigation  
+> For example, the `HHKB2_Profile.ahk` includes all scripts I like to use with a Happy Hacking keyboard on Windows.
 
-__Hotkey:__  `Alt` + `LButton` 
+### Special Behaviors
+
+Special behaviors will be indicated at the front of a script file name. e.g. `Tap_*.ahk` for functions that only take affect when a key is tapped alone.
+
 
