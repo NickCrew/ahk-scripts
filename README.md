@@ -4,19 +4,28 @@
 
 - [AHK Quick Reference](https://www.autohotkey.com/docs/AutoHotkey.htm)
 
-## Scripts
+## Script Organization
 
-AHK scripts organized into subfolders based on the key types or intended use.
+AHK scripts are organized into subfolders based on the key types or intended use. Each `.ahk` file should have a well-defined purpose. For greater flexibility profiles should be used to group scripts together using `#include`.
 
 ### Profiles
 
-Profiles at the top level are only including other scripts as related groupings.  
+`*_Profile.ahk` files can be used to organize scripts in a logical group using `#include` statements.  
 
-> For example, the `HHKB2_Profile.ahk` includes all scripts I like to use with a Happy Hacking keyboard on Windows.
+For example, you may want a profile associated with a certain machine or keyboard.
 
-### Special Behaviors
+### Simple Keybinding File Naming
 
-Special behaviors will be indicated at the front of a script file name.  
-e.g. `Tap` prefix for functions that only take affect when a key is tapped alone.
+A descriptive naming convention is used when possible.  
 
+`<special behavior>_<modifiers>_<normal keys>_<action>.ahk`  
 
+> Example: `Tap_LControl_To_Escape` : _Left control_ is treated as _escape_  when tapped by itself.
+
+### Startup
+
+A single `startup.ahk` should be placed in the `"%AppData%\Microsoft\Windows\Start Menu\Programs\Startup\"` folder.  
+
+Using only `#include` statements, select profiles and scripts from this repo that you wish to launch on startup.
+
+This file is also created when executing `init.bat`.
