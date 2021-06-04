@@ -1,8 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set startup_ahk="%AppData%\Microsoft\Start Menu\Programs\Startup\startup.ahk"
+set target="%AppData%\Microsoft\Start Menu\Programs\Startup\startup.ahk"
+if exist %target% ( del %target% )
 
-if not exist %startup_ahk% ( echo # startup.ahk > %startup_ahk% )
+mklink /d %target% %~dp0Default.ahk
 
 
