@@ -29,7 +29,7 @@
 ; favorite while an unsupported window type is active, a new
 ; Explorer window will be opened to display the contents of that
 ; folder.
-f_Hotkey = !LButton
+f_Hotkey = ^MButton
 
 ; CONFIG: CHOOSE YOUR FAVORITES
 ; Update the special commented section below to list your favorite
@@ -39,11 +39,12 @@ f_Hotkey = !LButton
 
 /*
 ITEMS IN FAVORITES MENU <-- Do not change this string.
-Desktop      ; %A_Desktop%
 Favorites    ; %A_Desktop%\..\Favorites
 My Documents ; %A_MyDocuments%
+Syno Drive   ; C:\Users\ncf42\SynologyDrive
 Perforce     ; C:\p4
-Source       ; C:\Users\ncf42\Source
+Vispero      ; E:\Vispero
+Projects     ; C:\Users\ncf42\Projects
 
 Program Files; %A_ProgramFiles%
 */
